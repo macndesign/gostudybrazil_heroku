@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block extra_head %}
+<script>
+$(document).ready(function(){
+  $("div#menu ul li a.contact").addClass("selected");
+});
+</script>
+{% endblock %}
+
+{% block content %}
+		<h2 style="margin:0; padding:0;">Contact</h2>
+		<div class="hr">
+			<hr />
+		</div>
+		<p><b>Tshombe Miles</b><br /><a href="mailto:tshombemiles@gmail.com">tshombemiles@gmail.com</a></p>
+		<p><b>Address</b><br />650 Malcolm X Boulevard, Suite 11-F <br />New York, New York 10037-1035</p>
+{% endblock %}

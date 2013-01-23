@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by XSD Extreme Software &amp; Design
+http://www.xsd.com.br
+Released 1.0 of site gostudybrazil.com
+
+Title      : GoStudyBrazil
+Version    : 1.0
+Released   : 20101015
+Description: A site for business
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>{% block title %}Go Study Brazil{% endblock %}</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="{{ STATIC_URL }}stylesheets/default.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="{{ STATIC_URL }}javascripts/jquery-1.4.4.min.js"></script>
+{% block extra_head %}{% endblock %}
+</head>
+<body>
+<div id="header">
+	<div id="logo">
+		<h1>
+		  <a href="{% url index %}"><span class="logo-go">Go</span><span class="logo-study">Study</span><span class="logo-brasil">Brasil</span></a>
+		</h1>
+		<h2><a href="{% url index %}">Site slogan's</a></h2>
+	</div>
+	<div id="menu">
+		<ul>
+		  {% block menu %}
+			<li class="first"><a title="Homepage" class="home" href="{% url index %}">Home</a></li>
+			<li><a title="About Us" class="about" href="{% url about %}">About</a></li>
+			<li><a title="Courses" class="courses" href="{% url courses %}">Courses</a></li>
+			<li><a title="Go Study Brasil Blog's" class="blog" href="{% url blog %}">Blog</a></li>
+			<li><a title="Contact" class="contact" href="{% url contact %}">Contact Us</a></li>
+			{% endblock %}
+		</ul>
+	</div>
+</div>
+<!-- end #header -->
+<div id="page">
+	<div id="content">
+	  {% block content %}{% endblock %}
+	</div>
+	<!-- end #content -->
+	<div id="sidebar">
+    <ul>
+      <li>
+        <ul>
+          <li><a class="programs" href="{% url programs %}">Programs</a></li>
+          <li><a class="volunteer" href="{% url index %}">Volunteer Work</a></li>
+          <li><a class="housing" href="{% url housing %}">Housing</a></li>
+          <li><a class="pictures" href="{% url index %}">Pictures</a></li>
+          <li><a class="partners" href="{% url partners %}">Partners</a></li>
+        </ul>
+      </li>
+      <li>
+        <h2>Links</h2>
+        <dl>
+          <dt><strong>Google</strong></dt>
+          <dd><a target="_blank" href="http://www.google.com/">http://www.google.com</a></dd>
+          <dt><strong>Microsoft</strong></dt>
+          <dd><a target="_blank" href="http://www.microsoft.com/">http://www.microsoft.com</a></dd>
+        </dl>
+      </li>
+    </ul>
+  </div>
+	<!-- end #sidebar -->
+	<div style="clear: both;">&nbsp;</div>
+</div>
+<!-- end #page -->
+<div id="footer">
+	<p id="legal">Copyright &copy; 2010 GoStudyBrasil. All Rights Reserved. Designed by <a href="http://www.xsd.com.br/">XSD Extreme Software &amp; Design</a>.</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block extra_head %}
+<script>
+$(document).ready(function(){
+  $("div#menu ul li a.home").addClass("selected");
+});
+</script>
+{% endblock %}
+
+{% block content %}
+		<p><img src="{{ STATIC_URL }}images/img04.jpg" alt="" width="420" height="200" /></p>
+		<h2>Introduction</h2>
+		<div class="hr">
+      <hr />
+    </div>
+		<p>The Study Abroad program is headquartered in the city of Fortaleza in the Northeast of Brazil and hosted at Stella Maris University. The college offers a variety of courses and offers degrees in a wide range of fields including International Relations. The college is accredited by the Brazilian ministry of education, and is well-respected institution in Brazil.</p>
+		<h3>Mission Statement</h3>
+		<p>&ldquo;Our Mission is to promote cross-cultural education and understanding. We hope by studying the rich history and culture of Brazil, students will gain better insights of themselves and the world that they live in. The Study Abroad Program will focus in some of the major political and socio-economic issues that impact Brazil. The course takes a multi-disciplinary approach to understanding the complexities that make Brazil the country that it is. Not only will the course draw resources from several disciplines: history, anthropology, sociology, Political Science, and economics, but a good part of the course will take place in the field. Students will be taken on field trips every week and introduced to Brazilians from all walks of life.&rdquo;</p>
+{% endblock %}

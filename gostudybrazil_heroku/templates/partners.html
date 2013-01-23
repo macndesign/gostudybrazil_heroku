@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block extra_head %}
+<script>
+$(document).ready(function(){
+  $("div#sidebar").find("a.partners").addClass("selected");
+});
+</script>
+{% endblock %}
+
+{% block content %}
+		<h2 style="margin:0; padding:0;">Partners</h2>
+		<div class="hr">
+			<hr />
+		</div>
+		<p>Etica<br /><a href="http://www.eticagd.com.br/">http://www.eticagd.com.br/</a></p>
+		<p>Faculdade Stella Maris<br />
+		  <a href="http://www.stellamaris.edu.br/v1/component/content/article/1-quem-somos/59-faculdade-stella-maris.htm">http://www.stellamaris.edu.br/v1/component/content/article/1-quem-somos/59-faculdade-stella-maris.htm</a><br />
+		</p>
+		<p>Faculdade Oboe<br />
+      <a href="http://www.faculdadeoboe.edu.br/">http://www.faculdadeoboe.edu.br/</a>
+    </p>
+    <p>
+      Movimento de Saúde Mental Comunitária do Bom Jardim<br />
+      <a href="http://www.msmcbj.org.br/">http://www.msmcbj.org.br/</a>
+    </p>
+{% endblock %}

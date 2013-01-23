@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block extra_head %}
+<script>
+$(document).ready(function(){
+  $("div#sidebar").find("a.housing").addClass("selected");
+});
+</script>
+{% endblock %}
+
+{% block content %}
+		<h2 style="margin:0; padding:0;">Housing</h2>
+		<div class="hr">
+			<hr />
+		</div>
+		<h3>Housing and Food</h3>
+		<p>Students will be placed in home-stays, or will have the option to rent apartments. Students will be entitled to three meals a day if they choose the home-stay option, but students who choose the apartment option will be responsible for their own food.</p>
+		<p>During overnight or extended travel students will stay in Pousada or Hostels. All meals will be included during excursions.</p>
+{% endblock %}
